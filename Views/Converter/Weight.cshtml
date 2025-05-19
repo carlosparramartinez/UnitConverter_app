@@ -1,17 +1,16 @@
 @*
-    Views/Converter/Length.cshtml
+    Views/Converter/Weight.cshtml
 *@
-@model UnitConverterApp.Models.ConversionModel
+@model UnitConverterApp.Models.WeightModel
 
-<h1>Convertidor de longitud</h1>
+<h1>Convertidor de peso</h1>
 <nav>
     <a asp-controller="Converter" asp-action="Length">Length</a> |
     <a asp-controller="Converter" asp-action="Weight">Weight</a> |
     <a asp-controller="Converter" asp-action="Temperature">Temperature</a>
-</nav>
-
-<form asp-action="Length"method="post">
-   <br /><br /><label>Introduzca la medida a convertir</label><br />
+</nav> 
+<form asp-action="Weight" method="post">
+   <br /><br /><label>Introduzca el peso a convertir</label><br />
     <input asp-for="Value" class="form-control" /><br />
 
     <label>Unidad para convertir desde</label><br />
@@ -20,8 +19,9 @@
     <label>Unidad a convertir</label><br />
     <select asp-for="ToUnit" asp-items="@(new SelectList(Model.Units))" class="form-select"></select><br />
 
-    <button type="submit">Convertir</button>
+    <button type="submit">Convert</button>
 </form>
+
 @if (Model?.Result != 0)
 {
     <p>Result of your calculation:</p>

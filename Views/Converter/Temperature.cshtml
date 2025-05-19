@@ -1,0 +1,33 @@
+@*
+    Views/Converter/Temperature.cshtml
+*@
+@model UnitConverterApp.Models.TemperatureModel
+
+<nav>
+    <a asp-controller="Converter" asp-action="Length">Length</a> |
+    <a asp-controller="Converter" asp-action="Weight">Weight</a> |
+    <a asp-controller="Converter" asp-action="Temperature">Temperature</a>
+</nav> 
+
+</br></br><h2>Temperature Converter</h2>
+
+<form asp-action="Temperature" method="post">
+    <div>
+        <label>Value:</label>
+        <input asp-for="Value" type="number" step="any" />
+    </div>
+    <div>
+        <label>From:</label>
+        <select asp-for="FromUnit" asp-items="@(new SelectList(Model.Units))"></select>
+    </div>
+    <div>
+        <label>To:</label>
+        <select asp-for="ToUnit" asp-items="@(new SelectList(Model.Units))"></select>
+    </div>
+    <button type="submit">Convert</button>
+</form>
+
+@if (Model.Result != 0 || Model.Value == 0)
+{
+    <p><strong>Result:</strong> @Model.Result</p>
+}

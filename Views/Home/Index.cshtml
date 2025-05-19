@@ -1,8 +1,11 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Unit Converter";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h1>Bienvenido a Unit Converter</h1>
+
+<ul>
+    <li><a asp-controller="Converter" asp-action="Length">Convertidor de longitud</a></li>
+    <li><a asp-controller="Converter" asp-action="Weight">Convertidor de peso</a></li>
+    <li><a asp-controller="Converter" asp-action="Temperature">Convertidor de temperatura</a></li>
+</ul>

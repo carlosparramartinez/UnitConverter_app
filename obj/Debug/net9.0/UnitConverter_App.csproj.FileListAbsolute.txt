@@ -95,3 +95,4 @@ C:\Users\User\Desktop\cosas\cursos\road map\UnitConverter_App\obj\Debug\net9.0\r
 C:\Users\User\Desktop\cosas\cursos\road map\UnitConverter_App\obj\Debug\net9.0\UnitConverter_App.pdb
 C:\Users\User\Desktop\cosas\cursos\road map\UnitConverter_App\obj\Debug\net9.0\UnitConverter_App.genruntimeconfig.cache
 C:\Users\User\Desktop\cosas\cursos\road map\UnitConverter_App\obj\Debug\net9.0\ref\UnitConverter_App.dll
+C:\Users\User\Desktop\cosas\cursos\road map\UnitConverter_App\obj\Debug\net9.0\UnitConverter_App.sourcelink.json

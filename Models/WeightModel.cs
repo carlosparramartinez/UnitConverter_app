@@ -1,14 +1,17 @@
+using System.Collections.Generic;
+
 namespace UnitConverterApp.Models
 {
-    public class ConversionModel
+    public class WeightModel
     {
         public double Value { get; set; }
         public string FromUnit { get; set; }
         public string ToUnit { get; set; }
         public double Result { get; set; }
-       public List<string> Units { get; set; } = new List<string>
+
+        public List<string> Units { get; set; } = new List<string>
         {
-            "mm", "cm", "m", "km", "in", "ft","yd", "mi"
+            "mg", "g", "kg", "lb", "oz", "ton"
         };
     }
 }
