@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\UnitConverter_App.props" />
+</Project>

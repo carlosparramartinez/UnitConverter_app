@@ -1,0 +1,28 @@
+@*
+    Views/Converter/Length.cshtml
+*@
+@model UnitConverterApp.Models.ConversionModel
+
+<h1>Length Converter</h2>
+
+<form asp-action="Length" method="post">
+    <label>Enter the length to convert</label><br />
+    <input asp-for="Value" /><br />
+
+    <label>Unit to Convert from (e.g., ft)</label><br />
+    <input asp-for="FromUnit" /><br />
+
+    <label>Unit to Convert to (e.g., cm)</label><br />
+    <input asp-for="ToUnit" /><br />
+
+    <button type="submit">Convert</button>
+</form>
+
+@if (Model != null && Model.Result != 0)
+{
+    <p>Result of your calculation:</p>
+    <strong>@Model.Value @Model.FromUnit = @Model.Result @Model.ToUnit</strong>
+    <form method="get">
+        <button type="submit">Reset</button>
+    </form>
+}
